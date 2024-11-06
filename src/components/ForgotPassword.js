@@ -10,7 +10,7 @@ const ForgotPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://password-reset-server.onrender.com/api/forgot-password', { email });
+      const response = await axios.post('https://task12-backend.onrender.com/api/forgot-password', { email });
       setMessage(response.data.message);
       setError('');
     } catch (error) {

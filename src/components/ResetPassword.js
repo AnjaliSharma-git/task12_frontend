@@ -12,7 +12,7 @@ const ResetPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`https://password-reset-server.onrender.com/api/reset-password/${token}`, { password });
+      const response = await axios.post(`https://task12-backend.onrender.com/api/reset-password/${token}`, { password });
       setMessage(response.data.message);
       setError('');
     } catch (error) {
