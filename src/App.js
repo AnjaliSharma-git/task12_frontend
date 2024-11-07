@@ -7,8 +7,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/reset-password/:token" element={<ResetPassword />} />
+        <Route exact path="/forgot-password" element={<ForgotPassword />} />
+        <Route exact path="/reset-password/:token" element={<ResetPassword />} />
       </Routes>
     </Router>
   );
